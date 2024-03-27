@@ -3,6 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="oswaldo.MainPage">
 
-    
+    <Grid>
+        
+        <!-- Definindo linhas -->
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+       
+       <!-- imagem de fundo -->
+        
+        <Image Source="b.jpg"
+            Grid.RowSpan="4"
+            Aspect="AspectFill"/> 
+       
+        <!-- Botao iniciar -->
+       
+       <ImageButton Source="start.jpg.png"
+            Clicked="buttonStarted"
+            Grid.Row="1"
+            BorderWidth="3"
+            BorderColor="White"/>
 
+        <!-- Botao sobre -->
+
+        <ImageButton Source=""/>
+
+        
+
+    </Grid>
 </ContentPage>
