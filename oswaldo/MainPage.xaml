@@ -16,21 +16,30 @@
        
        <!-- imagem de fundo -->
         
-        <Image Source="b.jpg"
-            Grid.RowSpan="4"
+        <Image Source="branco.jpg"
+            Grid.RowSpan="3"
             Aspect="AspectFill"/> 
+
+        <Grid>
+        <Label="Jogo dos Bixo"
+            Grid.Row="1"/>
+        </Grid>
        
         <!-- Botao iniciar -->
        
        <ImageButton Source="start.jpg.png"
             Clicked="buttonStarted"
-            Grid.Row="1"
+            Grid.Row="2"
             BorderWidth="3"
             BorderColor="White"/>
 
         <!-- Botao sobre -->
 
-        <ImageButton Source=""/>
+        <ImageButton Source="abrir-menu.png"
+            Clicked="buttonInf"
+            Grid.Row="2"
+            BorderWidth="3"
+            BorderColor="White"/>
 
         
 

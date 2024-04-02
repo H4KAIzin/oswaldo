@@ -23,4 +23,14 @@ public class persona
         else
             fome = 0;
     }
+
+    public void Setsede(int s)
+    {
+        if (s <= 10 || s >= 0)
+            sede = s;
+        else if (s > 10)
+            sede = 10;
+        else
+            sede = 0;
+    }
 }
