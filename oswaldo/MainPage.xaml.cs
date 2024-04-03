@@ -7,6 +7,19 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	
+	private void buttonStarted(object sender, EventArgs args)
+	{
+		Application.Current.MainPage = new GamePage ();
+	}	
+
+	private void buttonInf(object sender, EventArgs args)
+	{
+		framas.IsVisible = true;
+	}	
+
+	private void ClickedBack(object sender, EventArgs args)
+	{
+		framas.IsVisible = false;
+	}	
 }
 

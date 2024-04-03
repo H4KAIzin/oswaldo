@@ -33,4 +33,14 @@ public class persona
         else
             sede = 0;
     }
+
+    public void Setfelicidade(int fl)
+    {
+        if (fl <= 10 || fl >= 0)
+            felicidade = fl;
+        else if (fl > 10)
+            felicidade = 10;
+        else
+            felicidade = 0;
+    }
 }
