@@ -2,6 +2,13 @@ namespace oswaldo;
 
 public class persona
 {
+    protected string foto;
+
+    public string Getfoto()
+    {
+        return foto;
+    }
+
     protected int fome;
     protected int sede;
     protected int felicidade;
@@ -42,5 +49,20 @@ public class persona
             felicidade = 10;
         else
             felicidade = 0;
+    }
+
+    public int Getfome()
+    {
+        return fome;
+    }
+
+    public int Getsede()
+    {
+        return sede;
+    }
+
+    public int Getfelicidade()
+    {
+        return felicidade;
     }
 }
