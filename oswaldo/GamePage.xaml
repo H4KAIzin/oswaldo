@@ -11,22 +11,33 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="60"/>
         </Grid.ColumnDefinitions>
 
-    <imageButton source="seta.png"
+    <ImageButton Source="setinha2.png"
         Clicked="Right"
         Grid.Row="1"
        Grid.Column="2"
-       HorizontalOptions="end"/>
+       HorizontalOptions="Start"
+       Margin="5"/>
 
-    <imageButton source="seta.png"
+    <ImageButton Source="setinha2.png"
         Clicked="Right"
         Grid.Row="1"
        Grid.Column="0"
-       HorizontalOptions=""/>
+       HorizontalOptions="End"
+       Margin="5"/>
+
+        <Frame BackgroundColor="White"
+            BorderColor="Black"
+           CornerRadius="20"
+           Margin="5,10"
+           VerticalOptions="Fill"
+           Grid.Row="0">
+           Frame
+        </Frame>
 
 </Grid>
 </ContentPage>

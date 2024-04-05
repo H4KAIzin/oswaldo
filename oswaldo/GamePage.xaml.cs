@@ -14,6 +14,6 @@ private void Right(object sender, EventArgs args)
 
 private void Left(object sender, EventArgs args)
 	{
-		Application.Current.MainPage = new GamePage ();
+		
 	}	    
 }
