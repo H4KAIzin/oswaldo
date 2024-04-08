@@ -5,8 +5,9 @@
              Shell.NavBarIsVisible="False">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
             <RowDefinition Height="*"/>          
         </Grid.RowDefinitions>
 
@@ -14,29 +15,30 @@
             <ColumnDefinition Width="60"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="60"/>
         </Grid.ColumnDefinitions>
 
-    <ImageButton Source="setinha2.png"
-        Clicked="Right"
-        Grid.Row="1"
-       Grid.Column="2"
-       HorizontalOptions="Start"
-       Margin="5"/>
+    <ImageButton Source="setinha3.png"
+        Clicked="Left"
+        Grid.Row="3"
+       Grid.Column="3"
+       HorizontalOptions="Start"/>
 
-    <ImageButton Source="setinha2.png"
+    <ImageButton Source="setinha4.png"
         Clicked="Right"
-        Grid.Row="1"
+        Grid.Row="3"
        Grid.Column="0"
        HorizontalOptions="End"
-       Margin="5"/>
+       />
 
         <Frame BackgroundColor="White"
             BorderColor="Black"
            CornerRadius="20"
-           Margin="5,10"
+           HorizontalOptions="Fill"
            VerticalOptions="Fill"
-           Grid.Row="0">
-           Frame
+           Grid.RowSpan="2"
+           Frame.IsVisible="true"
+           Grid.ColumnSpan="4">
         </Frame>
 
 </Grid>
