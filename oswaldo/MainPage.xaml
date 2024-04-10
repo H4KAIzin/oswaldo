@@ -24,17 +24,13 @@
        
        <ImageButton Source="start.png"
             Clicked="buttonStarted"
-            Grid.Row="2"
-            BorderWidth="3"
-            BorderColor="White"/>
+            Grid.Row="2"/>
 
         <!-- Botao sobre -->
 
         <ImageButton Source="abrirmenu.png"
             Clicked="buttonInf"
-            Grid.Row="3"
-            BorderWidth="3"
-            BorderColor="White"/>
+            Grid.Row="3"/>
 
 
         <Frame x:Name="framas"

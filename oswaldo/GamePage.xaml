@@ -3,43 +3,87 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="oswaldo.GamePage"
              Shell.NavBarIsVisible="False">
-    <Grid>
+<Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
             <RowDefinition Height="*"/>          
-        </Grid.RowDefinitions>
+    </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="60"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="60"/>
-            <ColumnDefinition Width="60"/>
-        </Grid.ColumnDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="70"/>
+        <ColumnDefinition Width="70"/>
+        <ColumnDefinition Width="70"/>
+        <ColumnDefinition Width="70"/>
+        <ColumnDefinition Width="70"/>
+    </Grid.ColumnDefinitions>
+
+    <Image Source="trono.jpg"
+        Aspect="AspectFill"
+        Grid.Row="0"
+        Grid.Column="0"
+        Grid.RowSpan="5"
+        Grid.ColumnSpan="5"/>
+
+    <Image x:Name="AnimalImg"
+            Grid.Row="4"
+            HorizontalOptions="Center"
+            Grid.RowSpan="2"/>
 
     <ImageButton Source="setinha3.png"
         Clicked="Left"
         Grid.Row="3"
-       Grid.Column="3"
-       HorizontalOptions="Start"/>
+       Grid.Column="4"
+       HorizontalOptions="Start"
+       VerticalOptions="Center"/>
 
     <ImageButton Source="setinha4.png"
         Clicked="Right"
         Grid.Row="3"
-       Grid.Column="0"
-       HorizontalOptions="End"
-       />
+        Grid.Column="0"
+        HorizontalOptions="End"
+        VerticalOptions="Center"/>
 
-        <Frame BackgroundColor="White"
-            BorderColor="Black"
-           CornerRadius="20"
-           HorizontalOptions="Fill"
-           VerticalOptions="Fill"
-           Grid.RowSpan="2"
-           Frame.IsVisible="true"
-           Grid.ColumnSpan="4">
-        </Frame>
+    <Frame BackgroundColor="White"
+        BorderColor="Black"
+        CornerRadius="20"
+        HorizontalOptions="Fill"
+        VerticalOptions="Fill"
+        Grid.RowSpan="2"
+        Frame.IsVisible="true"
+        Grid.ColumnSpan="5">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>         
+        </Grid.RowDefinitions>
+
+            <ProgressBar x:Name="sifooda"
+                ProgressColor="#FF4500"
+                Progress="0,5"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"
+                Grid.Row="0"/>
+
+            <ProgressBar x:Name="siseeda"
+                ProgressColor="#00BFFF"
+                Progress="0,5"
+                VerticalOptions="Center"
+                HorizontalOptions="Fill"
+                Grid.Row="1"/>
+
+            <ProgressBar x:Name="sifeelida"
+                ProgressColor="#FFFF00"
+                Progress="0,5"
+                VerticalOptions="End"
+                HorizontalOptions="Fill"
+                Grid.Row="2"/>
+    </Grid>
+    </Frame>
 
 </Grid>
 </ContentPage>

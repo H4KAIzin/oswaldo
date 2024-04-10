@@ -3,12 +3,6 @@ namespace oswaldo;
 public class persona
 {
     protected string foto;
-
-    public string Getfoto()
-    {
-        return foto;
-    }
-
     protected int fome;
     protected int sede;
     protected int felicidade;
@@ -19,6 +13,11 @@ public class persona
         fome = 0;
         sede = 0;
         felicidade = 0;
+    }
+
+     public string Getfoto()
+    {
+        return foto;
     }
 
     public void Setfome(int f)
