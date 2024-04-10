@@ -4,33 +4,27 @@
              x:Class="oswaldo.GamePage"
              Shell.NavBarIsVisible="False">
 <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="*"/>          
+    <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>        
     </Grid.RowDefinitions>
 
     <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="70"/>
-        <ColumnDefinition Width="70"/>
-        <ColumnDefinition Width="70"/>
-        <ColumnDefinition Width="70"/>
-        <ColumnDefinition Width="70"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
     </Grid.ColumnDefinitions>
 
     <Image Source="trono.jpg"
         Aspect="AspectFill"
-        Grid.Row="0"
-        Grid.Column="0"
-        Grid.RowSpan="5"
-        Grid.ColumnSpan="5"/>
+        Grid.RowSpan="3"
+        Grid.ColumnSpan="3"/>
 
     <Image x:Name="AnimalImg"
-            Grid.Row="4"
-            HorizontalOptions="Center"
-            Grid.RowSpan="2"/>
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            HorizontalOptions="Center"/>
 
     <ImageButton Source="setinha3.png"
         Clicked="Left"
@@ -51,9 +45,9 @@
         CornerRadius="20"
         HorizontalOptions="Fill"
         VerticalOptions="Fill"
-        Grid.RowSpan="2"
+        Grid.Row="0"
         Frame.IsVisible="true"
-        Grid.ColumnSpan="5">
+        Grid.ColumnSpan="3">
 
     <Grid>
         <Grid.RowDefinitions>

@@ -3,9 +3,9 @@ namespace oswaldo;
 public class persona
 {
     protected string foto;
-    protected int fome;
-    protected int sede;
-    protected int felicidade;
+    protected double fome;
+    protected double sede;
+    protected double felicidade;
 
 
     public persona()
@@ -22,45 +22,45 @@ public class persona
 
     public void Setfome(int f)
     {
-        if (f <= 10 || f >= 0)
+        if (f < 0)
             fome = f;
-        else if (f > 10)
-            fome = 10;
+        else if (f > 1)
+            fome = 1;
         else
-            fome = 0;
+            fome = f;
     }
 
     public void Setsede(int s)
     {
-        if (s <= 10 || s >= 0)
+        if (s < 0)
             sede = s;
-        else if (s > 10)
-            sede = 10;
+        else if (s > 1)
+            sede = 1;
         else
-            sede = 0;
+            sede = s;
     }
 
     public void Setfelicidade(int fl)
     {
-        if (fl <= 10 || fl >= 0)
+        if (fl < 0)
             felicidade = fl;
-        else if (fl > 10)
-            felicidade = 10;
+        else if (fl > 1)
+            felicidade = 1;
         else
-            felicidade = 0;
+            felicidade = fl;
     }
 
-    public int Getfome()
+    public double Getfome()
     {
         return fome;
     }
 
-    public int Getsede()
+    public double Getsede()
     {
         return sede;
     }
 
-    public int Getfelicidade()
+    public double Getfelicidade()
     {
         return felicidade;
     }
