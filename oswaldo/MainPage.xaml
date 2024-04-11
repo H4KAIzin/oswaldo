@@ -33,7 +33,7 @@
             Grid.Row="3"/>
 
 
-        <Frame x:Name="framas"
+        <Frame x:Name="Framas"
                     IsVisible="false"
                     Margin="15, 20"
                     CornerRadius="18"

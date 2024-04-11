@@ -5,7 +5,7 @@ public class dog : persona
 {
     public dog()
     {
-        foto = "dog.png";
+        Foto = "dog.png";
     }
     
 }

@@ -14,12 +14,12 @@ public partial class MainPage : ContentPage
 
 	private void buttonInf(object sender, EventArgs args)
 	{
-		framas.IsVisible = true;
+		Framas.IsVisible = true;
 	}	
 
 	private void ClickedBack(object sender, EventArgs args)
 	{
-		framas.IsVisible = false;
+		Framas.IsVisible = false;
 	}	
 }
 

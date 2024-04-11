@@ -5,6 +5,6 @@ public class elgaton : persona
 {
     public elgaton()
     {
-        foto = "elgaton.png";
+        Foto = "elgaton.png";
     }
 }

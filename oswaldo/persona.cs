@@ -2,66 +2,66 @@ namespace oswaldo;
 
 public class persona
 {
-    protected string foto;
-    protected double fome;
-    protected double sede;
-    protected double felicidade;
+    protected string Foto;
+    protected double Fome;
+    protected double Sede;
+    protected double Felicidade;
 
 
     public persona()
     {
-        fome = 0;
-        sede = 0;
-        felicidade = 0;
+        Fome = 0;
+        Sede = 0;
+        Felicidade = 0;
     }
 
-     public string Getfoto()
+     public string GetFoto()
     {
-        return foto;
+        return Foto;
     }
 
-    public void Setfome(int f)
+    public void SetFome(double f)
     {
         if (f < 0)
-            fome = f;
+            Fome = 0;
         else if (f > 1)
-            fome = 1;
+            Fome = 1;
         else
-            fome = f;
+            Fome = f;
     }
 
-    public void Setsede(int s)
+    public void SetSede(double s)
     {
         if (s < 0)
-            sede = s;
+            Sede = 0;
         else if (s > 1)
-            sede = 1;
+            Sede = 1;
         else
-            sede = s;
+            Sede = s;
     }
 
-    public void Setfelicidade(int fl)
+    public void SetFelicidade(double fe)
     {
-        if (fl < 0)
-            felicidade = fl;
-        else if (fl > 1)
-            felicidade = 1;
+        if (fe < 0)
+            Felicidade = 0;
+        else if (fe > 1)
+            Felicidade = 1;
         else
-            felicidade = fl;
+            Felicidade = fe;
     }
 
-    public double Getfome()
+    public double GetFome()
     {
-        return fome;
+        return Fome;
     }
 
-    public double Getsede()
+    public double GetSede()
     {
-        return sede;
+        return Sede;
     }
 
-    public double Getfelicidade()
+    public double GetFelicidade()
     {
-        return felicidade;
+        return Felicidade;
     }
 }

@@ -79,5 +79,33 @@
     </Grid>
     </Frame>
 
+    <Frame
+    Grid.Row="1"
+    Grid.Column="2"
+    Margin="5"
+    BackgroundColor="#00FFFFFF">
+
+    <Grid>
+    <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>        
+    </Grid.RowDefinitions>
+
+            <ImageButton Source="wifinho.png" 
+            Clicked="ClicouBotaoComida"
+            Grid.Row="0"/>
+
+            <ImageButton Source="awa.png" 
+            Clicked="ClicouBotaoSede"
+            Grid.Row="1"/>
+
+            <ImageButton Source="finas.png" 
+            Clicked="ClicouBotaoFelicidade"
+            Grid.Row="2"/>
+
+        </Grid>
+    </Frame>
+
 </Grid>
 </ContentPage>
